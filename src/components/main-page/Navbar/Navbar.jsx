@@ -1,7 +1,7 @@
 import React from 'react';
 import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink, Logotype} from './NavbarStyle';
 import Logo from '../../../assets/img/logo2.png'
-export const Navbar = () => {
+export const Navbar = ({ toggle }) => {
     
     return (
        <>
@@ -9,7 +9,7 @@ export const Navbar = () => {
             <NavLink to="/">
                <img src={Logo} style={{width: '60px', height: '60px', position: 'relative'}}/>
             </NavLink>
-            <Bars />
+            <Bars onClick={toggle}/>
         <NavMenu>
             <NavLink to="/catalogue" activeStyle>
                 Catalogue
