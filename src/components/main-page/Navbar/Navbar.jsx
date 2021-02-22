@@ -1,13 +1,13 @@
 import React from 'react';
 import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink, Logotype} from './NavbarStyle';
-import Logo from '../../../assets/img/logo2.png'
+import Logo from '../../../assets/img/logo4.png'
 export const Navbar = ({ toggle }) => {
     
     return (
        <>
         <Nav>
-            <NavLink to="/">
-               <img src={Logo} style={{width: '60px', height: '60px', position: 'relative'}}/>
+            <NavLink to="/" style={{ background: 'transparent', height: '60px' }}>
+               <img src={Logo} style={{width: '60px', height: '60px', position: 'relative', background: 'transparent'}}/>
             </NavLink>
             <Bars onClick={toggle}/>
         <NavMenu>
@@ -28,7 +28,7 @@ export const Navbar = ({ toggle }) => {
             </NavLink>
         </NavMenu>
         <NavBtn>
-            <NavBtnLink to="/signin">Sign In</NavBtnLink>
+            <NavBtnLink to="/login">Sign In</NavBtnLink>
         </NavBtn>
         </Nav>
         </>
